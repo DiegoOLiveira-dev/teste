@@ -1,5 +1,5 @@
 <ng-template ngFor let-poke [ngForOf]="getAllPokes">
-    <a class="pokemon" href="">
+    <a class="pokemon" *ngIf="poke">
         <section class="pokemon__status">
             <h2>{{poke.name}}</h2>
             <ul>
@@ -9,7 +9,7 @@
             </ul>
         </section>
         <section class="pokemon__image">
-            <img src="assets/bulba.png" alt="Bulbasaur">
+            <img [src]="poke.status.sprites.other.dream_world.front_default" [alt]="poke.name">
         </section>
     </a>
 </ng-template>
