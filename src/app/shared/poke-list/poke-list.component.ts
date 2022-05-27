@@ -20,4 +20,6 @@ export class PokeListComponent implements OnInit {
     })
   }
 
+  //teste commit 
+
 }
